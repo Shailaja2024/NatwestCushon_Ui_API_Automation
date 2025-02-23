@@ -1,0 +1,1719 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Automation Test Report</title>
+  <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@3da944e596e81f10ac6c1042c792af8a5a741023/commons/img/logo.png">
+  <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@3da944e596e81f10ac6c1042c792af8a5a741023/commons/img/logo.png">
+  <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@8539670db814bf19a0ddbe9a6d19058aea0cf981/spark/css/spark-style.css" rel="stylesheet" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style> </style>
+</head>
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<body class="spa  standard">
+    <div class="app header-dark side-nav-folded">
+        <div class="layout">
+            <div class="header navbar">
+    <div class="header-container">
+        <div class="nav-logo">
+          <a href="index.html">
+            <div class="logo logo-dark" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+            <div class="logo logo-white" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+          </a>
+        </div>
+        <ul class="nav-left">
+          <li>
+            <a class="sidenav-fold-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+            <a class="sidenav-expand-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
+          <li class="search-box">
+            <a class="search-toggle" href="javascript:void(0);">
+              <i class="search-icon fa fa-search"></i>
+              <i class="search-icon-close fa fa-close"></i>
+            </a>
+          </li>
+          <li class="search-input">
+            <input id="search-tests" class="form-control" type="text" placeholder="Type to search...">
+          </li>
+        </ul>
+        <ul class="nav-right">
+          <li class="m-r-10">
+            <a href="#">
+              <span class="badge badge-primary">Test Report</span>
+            </a>
+          </li>
+            <li class="m-r-10">
+                <a href="#">
+                    <span class="badge badge-primary">23/02/2025 12:43:10</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+            <div class="side-nav side-nav-folded">
+  <div class="side-nav-inner">
+    <ul class="side-nav-menu scrollable">
+      <li class="nav-item dropdown" onclick="toggleView('test-view')">
+        <a id="nav-test" class="dropdown-toggle" href="index.html">
+          <span class="icon-holder">
+            <i class="fa fa-align-left"></i>
+          </span>
+          <span class="title">Tests</span>
+        </a>
+      </li>
+            <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+        <a id="nav-dashboard" class="dropdown-toggle" href="dashboard.html">
+          <span class="icon-holder">
+            <i class="fa fa-bar-chart"></i>
+          </span>
+          <span class="title">Dashboard</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="side-nav-controls">
+    <ul>
+      <li>
+        <a href="#" class="lightsout" style="color:#8a8a8a;">
+          <i class="fa fa-desktop"></i>"</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+            <div class="page-container">
+                <div class="main-content">
+                    <div class="test-wrapper row test-view">
+    <div class="test-list">
+        <div class="test-list-tools">
+            <ul class="tools pull-left">
+                <li>
+                    <a href="">
+                        <span class="font-size-14">Tests</span>
+                    </a>
+                </li> 
+            </ul>
+            <ul class="tools text-right">
+				<li class="user-profile dropdown dropdown-animated scale-left">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="fa fa-exclamation-circle"></i>
+					</a>
+					<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a status="pass" class="dropdown-item" href="#"><span>Pass</span><span class="status success pull-right"></span></a>						<a status="fail" class="dropdown-item" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>																														<div class="dropdown-divider"></div>
+						<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+					</ul>
+				</li>
+								            </ul>
+        </div>
+        <div class="test-list-wrapper scrollable">
+            <ul class="test-list-item">
+					<li class="test-item" status="fail" author="" device="" tag="" test-id="1"> 
+						<div class="status-avatar fail-bg">
+							<i class="fa fa-times text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Airports data and validation</p> 
+								<p class="duration text-sm">0h:0m:1s+343ms</p> 
+								<span class="datetime">12:43:11 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-fail">Airports data and validation</h5>
+										<span class='badge badge-success'>23/02/2025 12:43:11</span>
+										<span class='badge badge-danger'>23/02/2025 12:43:12</span>
+										<span class='badge badge-default'>0h:0m:1s+343ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:43:11</td>
+				<td>
+Starting test: Airports data and validation									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:43:11</td>
+				<td>
+Given the user have a valid token - <i>Duration: 63875911391.96754 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:43:12</td>
+				<td>
+When the user makes a Get request to '/airports' - <i>Duration: 63875911392.25448 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:43:12</td>
+				<td>
+Then the response status should be 200 - <i>Duration: 63875911392.26338 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:43:12</td>
+				<td>
+Then the response should contain a list of airports - <i>Duration: 63875911392.27065 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:43:12</td>
+				<td>
+When the user makes a Get request to '/airports/MAG' - <i>Duration: 63875911392.54547 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:43:12</td>
+				<td>
+Then the response status should be 200 - <i>Duration: 63875911392.545906 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-warning text-warning"></i></td>
+				<td>12:43:12</td>
+				<td>
+Error capturing screenshot: Object reference not set to an instance of an object.									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>12:43:12</td>
+				<td>
+Then the response body should contain below details - <i>Duration: 63875911392.59017 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>12:43:12</td>
+				<td>
+Expected: "Madang"
+  But was:  null									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>12:43:12</td>
+				<td>
+Expected: "Madang"
+  But was:  null									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<img class='r-img' title='' onerror='this.style.display="none"' data-featherlight='' src='' data-src=''>						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="2"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Favourites and Validations</p> 
+								<p class="duration text-sm">0h:0m:2s+531ms</p> 
+								<span class="datetime">12:43:12 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Favourites and Validations</h5>
+										<span class='badge badge-success'>23/02/2025 12:43:12</span>
+										<span class='badge badge-danger'>23/02/2025 12:43:15</span>
+										<span class='badge badge-default'>0h:0m:2s+531ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:43:12</td>
+				<td>
+Starting test: Favourites and Validations									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:43:13</td>
+				<td>
+Given the user have a valid token - <i>Duration: 63875911393.155556 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:43:13</td>
+				<td>
+When the user makes a Post request to '/favorites' with id 'GOH' and note 'A very good airport' parameters - <i>Duration: 63875911393.429634 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:43:13</td>
+				<td>
+Then the response status should be 201 - <i>Duration: 63875911393.43007 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:43:13</td>
+				<td>
+When the user makes a Get request to '/favorites' - <i>Duration: 63875911393.743805 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:43:13</td>
+				<td>
+Then the response status should be 200 - <i>Duration: 63875911393.74404 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:43:13</td>
+				<td>
+Then the response body should contain below details - <i>Duration: 63875911393.74441 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:43:14</td>
+				<td>
+When user makes a Patch request to '/favorites/' update with id 'GOH' and the notes as 'Its my first favorites' - <i>Duration: 63875911394.01313 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:43:14</td>
+				<td>
+Then the response status should be 200 - <i>Duration: 63875911394.01331 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:43:14</td>
+				<td>
+When user makes a Delete request to remove the '/favorites/' along with id - <i>Duration: 63875911394.30651 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:43:14</td>
+				<td>
+Then the response status should be 204 - <i>Duration: 63875911394.30674 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:43:14</td>
+				<td>
+When the user makes a Post request to '/favorites' with id 'UAK' and note 'A very good airport' parameters - <i>Duration: 63875911394.57439 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:43:14</td>
+				<td>
+Then the response status should be 201 - <i>Duration: 63875911394.57465 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:43:14</td>
+				<td>
+When the user makes a Get request to '/favorites/' - <i>Duration: 63875911394.86135 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:43:14</td>
+				<td>
+Then the response status should be 200 - <i>Duration: 63875911394.86181 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:43:15</td>
+				<td>
+When user makes a Delete request to '/favorites/clear_all' to remove all favourites - <i>Duration: 63875911395.14199 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:43:15</td>
+				<td>
+Then the response status should be 204 - <i>Duration: 63875911395.14233 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:43:15</td>
+				<td>
+Test Passed									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="fail" author="" device="" tag="" test-id="3"> 
+						<div class="status-avatar fail-bg">
+							<i class="fa fa-times text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Valid and invalid authentication token</p> 
+								<p class="duration text-sm">0h:0m:1s+101ms</p> 
+								<span class="datetime">12:43:15 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-fail">Valid and invalid authentication token</h5>
+										<span class='badge badge-success'>23/02/2025 12:43:15</span>
+										<span class='badge badge-danger'>23/02/2025 12:43:16</span>
+										<span class='badge badge-default'>0h:0m:1s+101ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:43:15</td>
+				<td>
+Starting test: Valid and invalid authentication token									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:43:15</td>
+				<td>
+Given the user have a valid token - <i>Duration: 63875911395.665 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:43:15</td>
+				<td>
+When the user makes a Get request to '/airports' - <i>Duration: 63875911395.97156 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:43:15</td>
+				<td>
+Then the response status should be 200 - <i>Duration: 63875911395.97218 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:43:16</td>
+				<td>
+When the user send a Get request to '/airports' with an invalid token '1234567' - <i>Duration: 63875911396.24452 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-warning text-warning"></i></td>
+				<td>12:43:16</td>
+				<td>
+Error capturing screenshot: Object reference not set to an instance of an object.									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>12:43:16</td>
+				<td>
+Then the response status should be 401 - <i>Duration: 63875911396.24619 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>12:43:16</td>
+				<td>
+Expected 401 but got 200
+  Expected: 401
+  But was:  200									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>12:43:16</td>
+				<td>
+Expected 401 but got 200
+  Expected: 401
+  But was:  200									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<img class='r-img' title='' onerror='this.style.display="none"' data-featherlight='' src='' data-src=''>						</div>
+					</li>
+					<li class="test-item" status="fail" author="" device="" tag="" test-id="4"> 
+						<div class="status-avatar fail-bg">
+							<i class="fa fa-times text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Checkout functionality</p> 
+								<p class="duration text-sm">0h:0m:50s+676ms</p> 
+								<span class="datetime">12:43:18 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-fail">Checkout functionality</h5>
+										<span class='badge badge-success'>23/02/2025 12:43:18</span>
+										<span class='badge badge-danger'>23/02/2025 12:44:09</span>
+										<span class='badge badge-default'>0h:0m:50s+676ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:43:18</td>
+				<td>
+Starting test: Checkout functionality									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:43:19</td>
+				<td>
+Given the user is on the sweet shop home page - <i>Duration: 63875911399.831566 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:43:19</td>
+				<td>
+Then the user should be able to see the title 'Welcome to the sweet shop!' - <i>Duration: 63875911399.871796 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:43:20</td>
+				<td>
+When the user clicks the 'Add to Basket' button for a sweet 'Chocolate Cups' - <i>Duration: 63875911400.9331 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:43:21</td>
+				<td>
+Then the user should be able to see the basket 1 - <i>Duration: 63875911401.97427 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:43:34</td>
+				<td>
+When the user navigates to the 'Basket' - <i>Duration: 63875911414.24154 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:43:36</td>
+				<td>
+Then the user should be able to see the valid 'Your Basket' - <i>Duration: 63875911416.271805 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:43:37</td>
+				<td>
+Then the user should be albe to see the your basket is 1 - <i>Duration: 63875911417.28821 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:43:57</td>
+				<td>
+When the user enters details to billing adress - <i>Duration: 63875911437.6324 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:43:57</td>
+				<td>
+When the user selects an option from the below dripdowns - <i>Duration: 63875911437.82233 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:44:06</td>
+				<td>
+When the user enters details to Payment - <i>Duration: 63875911446.050125 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:44:08</td>
+				<td>
+When the user click on the 'Continue to checkout' button - <i>Duration: 63875911448.259865 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>12:44:09</td>
+				<td>
+Then the user should be albe to see the your basket is 0 - <i>Duration: 63875911449.2922 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>12:44:09</td>
+				<td>
+Count mismatch! Expected: 0, Actual: 1
+  Expected: 0
+  But was:  1									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>12:44:09</td>
+				<td>
+Test Failed									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>12:44:09</td>
+				<td>
+Count mismatch! Expected: 0, Actual: 1
+  Expected: 0
+  But was:  1									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<img class='r-img' title='' onerror='this.style.display="none"' data-featherlight='C:\Users\vmmch\source\repos\NatwestCushon_Automation_Test\NatwestCushon_Automation_Test\bin\Debug\net9.0\..\..\..\TestResults\Screenshots\the user should be albe to see the your basket is 0_20250223_124409.png' src='C:\Users\vmmch\source\repos\NatwestCushon_Automation_Test\NatwestCushon_Automation_Test\bin\Debug\net9.0\..\..\..\TestResults\Screenshots\the user should be albe to see the your basket is 0_20250223_124409.png' data-src='C:\Users\vmmch\source\repos\NatwestCushon_Automation_Test\NatwestCushon_Automation_Test\bin\Debug\net9.0\..\..\..\TestResults\Screenshots\the user should be albe to see the your basket is 0_20250223_124409.png'><img class='r-img' title='' onerror='this.style.display="none"' data-featherlight='C:\Users\vmmch\source\repos\NatwestCushon_Automation_Test\NatwestCushon_Automation_Test\bin\Debug\net9.0\..\..\..\TestResults\Screenshots\Checkout functionality_20250223_124409.png' src='C:\Users\vmmch\source\repos\NatwestCushon_Automation_Test\NatwestCushon_Automation_Test\bin\Debug\net9.0\..\..\..\TestResults\Screenshots\Checkout functionality_20250223_124409.png' data-src='C:\Users\vmmch\source\repos\NatwestCushon_Automation_Test\NatwestCushon_Automation_Test\bin\Debug\net9.0\..\..\..\TestResults\Screenshots\Checkout functionality_20250223_124409.png'>						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="5"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">User should be albe to navigate to different pages from homepage</p> 
+								<p class="duration text-sm">0h:0m:5s+613ms</p> 
+								<span class="datetime">12:44:11 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">User should be albe to navigate to different pages from homepage</h5>
+										<span class='badge badge-success'>23/02/2025 12:44:11</span>
+										<span class='badge badge-danger'>23/02/2025 12:44:16</span>
+										<span class='badge badge-default'>0h:0m:5s+613ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:44:11</td>
+				<td>
+Starting test: User should be albe to navigate to different pages from homepage									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:44:11</td>
+				<td>
+Given the user is on the sweet shop home page - <i>Duration: 63875911451.68145 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:44:11</td>
+				<td>
+Then the user should be able to see the title 'Welcome to the sweet shop!' - <i>Duration: 63875911451.71432 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:44:14</td>
+				<td>
+When the user navigates to the 'Sweets' - <i>Duration: 63875911454.584755 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:44:16</td>
+				<td>
+Then the user should be able to see the valid 'Browse sweets' - <i>Duration: 63875911456.62098 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:44:16</td>
+				<td>
+Test Passed									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="6"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">User should be albe to navigate to different pages from homepage</p> 
+								<p class="duration text-sm">0h:0m:4s+978ms</p> 
+								<span class="datetime">12:44:18 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">User should be albe to navigate to different pages from homepage</h5>
+										<span class='badge badge-success'>23/02/2025 12:44:18</span>
+										<span class='badge badge-danger'>23/02/2025 12:44:23</span>
+										<span class='badge badge-default'>0h:0m:4s+978ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:44:18</td>
+				<td>
+Starting test: User should be albe to navigate to different pages from homepage									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:44:18</td>
+				<td>
+Given the user is on the sweet shop home page - <i>Duration: 63875911458.55231 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:44:18</td>
+				<td>
+Then the user should be able to see the title 'Welcome to the sweet shop!' - <i>Duration: 63875911458.57788 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:44:20</td>
+				<td>
+When the user navigates to the 'About' - <i>Duration: 63875911460.97961 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:44:23</td>
+				<td>
+Then the user should be able to see the valid 'Sweet Shop Project' - <i>Duration: 63875911463.018394 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:44:23</td>
+				<td>
+Test Passed									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="7"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">User should be albe to navigate to different pages from homepage</p> 
+								<p class="duration text-sm">0h:0m:10s+150ms</p> 
+								<span class="datetime">12:44:24 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">User should be albe to navigate to different pages from homepage</h5>
+										<span class='badge badge-success'>23/02/2025 12:44:24</span>
+										<span class='badge badge-danger'>23/02/2025 12:44:34</span>
+										<span class='badge badge-default'>0h:0m:10s+150ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:44:24</td>
+				<td>
+Starting test: User should be albe to navigate to different pages from homepage									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:44:30</td>
+				<td>
+Given the user is on the sweet shop home page - <i>Duration: 63875911470.43259 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:44:30</td>
+				<td>
+Then the user should be able to see the title 'Welcome to the sweet shop!' - <i>Duration: 63875911470.459274 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:44:32</td>
+				<td>
+When the user navigates to the 'Login' - <i>Duration: 63875911472.61956 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:44:34</td>
+				<td>
+Then the user should be able to see the valid 'Login' - <i>Duration: 63875911474.64387 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:44:34</td>
+				<td>
+Test Passed									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="8"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">User should be albe to navigate to different pages from homepage</p> 
+								<p class="duration text-sm">0h:0m:15s+485ms</p> 
+								<span class="datetime">12:44:36 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">User should be albe to navigate to different pages from homepage</h5>
+										<span class='badge badge-success'>23/02/2025 12:44:36</span>
+										<span class='badge badge-danger'>23/02/2025 12:44:51</span>
+										<span class='badge badge-default'>0h:0m:15s+485ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:44:36</td>
+				<td>
+Starting test: User should be albe to navigate to different pages from homepage									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:44:37</td>
+				<td>
+Given the user is on the sweet shop home page - <i>Duration: 63875911477.36435 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:44:37</td>
+				<td>
+Then the user should be able to see the title 'Welcome to the sweet shop!' - <i>Duration: 63875911477.38766 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:44:49</td>
+				<td>
+When the user navigates to the 'Basket' - <i>Duration: 63875911489.653145 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:44:51</td>
+				<td>
+Then the user should be able to see the valid 'Your Basket' - <i>Duration: 63875911491.69343 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:44:51</td>
+				<td>
+Test Passed									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="9"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify the home page</p> 
+								<p class="duration text-sm">0h:0m:16s+898ms</p> 
+								<span class="datetime">12:44:53 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify the home page</h5>
+										<span class='badge badge-success'>23/02/2025 12:44:53</span>
+										<span class='badge badge-danger'>23/02/2025 12:45:10</span>
+										<span class='badge badge-default'>0h:0m:16s+898ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:44:53</td>
+				<td>
+Starting test: Verify the home page									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:44:53</td>
+				<td>
+Given the user is on the sweet shop home page - <i>Duration: 63875911493.85704 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:44:53</td>
+				<td>
+Then the user should be able to see the title 'Welcome to the sweet shop!' - <i>Duration: 63875911493.87959 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:44:55</td>
+				<td>
+Then the user should be able to see the 'Browse Sweets' button - <i>Duration: 63875911495.92579 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:45:10</td>
+				<td>
+Then the user should be ale to see the below options in the menu bar - <i>Duration: 63875911510.08955 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:45:10</td>
+				<td>
+Test Passed									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="10"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">User attempts to log in with different credentials</p> 
+								<p class="duration text-sm">0h:0m:15s+425ms</p> 
+								<span class="datetime">12:45:11 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">User attempts to log in with different credentials</h5>
+										<span class='badge badge-success'>23/02/2025 12:45:11</span>
+										<span class='badge badge-danger'>23/02/2025 12:45:27</span>
+										<span class='badge badge-default'>0h:0m:15s+425ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:45:11</td>
+				<td>
+Starting test: User attempts to log in with different credentials									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:45:12</td>
+				<td>
+Given the user is on the sweet shop home page - <i>Duration: 63875911512.416435 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:45:12</td>
+				<td>
+Then the user should be able to see the title 'Welcome to the sweet shop!' - <i>Duration: 63875911512.44008 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:45:14</td>
+				<td>
+When user clicks login button on navigation bar - <i>Duration: 63875911514.617065 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:45:16</td>
+				<td>
+When the user enters the username 'Valid UserName' - <i>Duration: 63875911516.68782 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:45:18</td>
+				<td>
+When the user enters the password 'Valid Password' - <i>Duration: 63875911518.740814 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:45:22</td>
+				<td>
+When clicks the login button - <i>Duration: 63875911522.98302 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:45:27</td>
+				<td>
+Then the user should see 'Welcome back' - <i>Duration: 63875911527.031876 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:45:27</td>
+				<td>
+Test Passed									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="fail" author="" device="" tag="" test-id="11"> 
+						<div class="status-avatar fail-bg">
+							<i class="fa fa-times text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">User attempts to log in with different credentials</p> 
+								<p class="duration text-sm">0h:0m:23s+678ms</p> 
+								<span class="datetime">12:45:28 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-fail">User attempts to log in with different credentials</h5>
+										<span class='badge badge-success'>23/02/2025 12:45:28</span>
+										<span class='badge badge-danger'>23/02/2025 12:45:52</span>
+										<span class='badge badge-default'>0h:0m:23s+678ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:45:28</td>
+				<td>
+Starting test: User attempts to log in with different credentials									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:45:28</td>
+				<td>
+Given the user is on the sweet shop home page - <i>Duration: 63875911528.974335 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:45:28</td>
+				<td>
+Then the user should be able to see the title 'Welcome to the sweet shop!' - <i>Duration: 63875911528.9952 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:45:31</td>
+				<td>
+When user clicks login button on navigation bar - <i>Duration: 63875911531.15804 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:45:33</td>
+				<td>
+When the user enters the username 'Invalid UserName' - <i>Duration: 63875911533.22721 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:45:35</td>
+				<td>
+When the user enters the password 'Invalid Password' - <i>Duration: 63875911535.282524 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:45:39</td>
+				<td>
+When clicks the login button - <i>Duration: 63875911539.931496 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>12:45:52</td>
+				<td>
+Then the user should see 'Please enter a valid email address.' - <i>Duration: 63875911551.98982 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>12:45:52</td>
+				<td>
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(), 'Please enter a valid email address.')]"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>12:45:52</td>
+				<td>
+Test Failed									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>12:45:52</td>
+				<td>
+OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(), 'Please enter a valid email address.')]"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<img class='r-img' title='' onerror='this.style.display="none"' data-featherlight='C:\Users\vmmch\source\repos\NatwestCushon_Automation_Test\NatwestCushon_Automation_Test\bin\Debug\net9.0\..\..\..\TestResults\Screenshots\the user should see 'Please enter a valid email address.'_20250223_124552.png' src='C:\Users\vmmch\source\repos\NatwestCushon_Automation_Test\NatwestCushon_Automation_Test\bin\Debug\net9.0\..\..\..\TestResults\Screenshots\the user should see 'Please enter a valid email address.'_20250223_124552.png' data-src='C:\Users\vmmch\source\repos\NatwestCushon_Automation_Test\NatwestCushon_Automation_Test\bin\Debug\net9.0\..\..\..\TestResults\Screenshots\the user should see 'Please enter a valid email address.'_20250223_124552.png'><img class='r-img' title='' onerror='this.style.display="none"' data-featherlight='C:\Users\vmmch\source\repos\NatwestCushon_Automation_Test\NatwestCushon_Automation_Test\bin\Debug\net9.0\..\..\..\TestResults\Screenshots\User attempts to log in with different credentials_20250223_124552.png' src='C:\Users\vmmch\source\repos\NatwestCushon_Automation_Test\NatwestCushon_Automation_Test\bin\Debug\net9.0\..\..\..\TestResults\Screenshots\User attempts to log in with different credentials_20250223_124552.png' data-src='C:\Users\vmmch\source\repos\NatwestCushon_Automation_Test\NatwestCushon_Automation_Test\bin\Debug\net9.0\..\..\..\TestResults\Screenshots\User attempts to log in with different credentials_20250223_124552.png'>						</div>
+					</li>
+					<li class="test-item" status="fail" author="" device="" tag="" test-id="12"> 
+						<div class="status-avatar fail-bg">
+							<i class="fa fa-times text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">User attempts to log in with different credentials</p> 
+								<p class="duration text-sm">0h:0m:24s+637ms</p> 
+								<span class="datetime">12:45:53 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-fail">User attempts to log in with different credentials</h5>
+										<span class='badge badge-success'>23/02/2025 12:45:53</span>
+										<span class='badge badge-danger'>23/02/2025 12:46:18</span>
+										<span class='badge badge-default'>0h:0m:24s+637ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:45:53</td>
+				<td>
+Starting test: User attempts to log in with different credentials									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:45:54</td>
+				<td>
+Given the user is on the sweet shop home page - <i>Duration: 63875911554.97503 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:45:54</td>
+				<td>
+Then the user should be able to see the title 'Welcome to the sweet shop!' - <i>Duration: 63875911554.99645 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:45:57</td>
+				<td>
+When user clicks login button on navigation bar - <i>Duration: 63875911557.53818 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:45:59</td>
+				<td>
+When the user enters the username 'Valid UserName' - <i>Duration: 63875911559.61216 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:46:01</td>
+				<td>
+When the user enters the password 'Invalid Password' - <i>Duration: 63875911561.66889 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:46:06</td>
+				<td>
+When clicks the login button - <i>Duration: 63875911566.09689 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>12:46:18</td>
+				<td>
+Then the user should see 'Please enter a valid password.' - <i>Duration: 63875911578.12392 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>12:46:18</td>
+				<td>
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(), 'Please enter a valid password.')]"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>12:46:18</td>
+				<td>
+Test Failed									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>12:46:18</td>
+				<td>
+OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(), 'Please enter a valid password.')]"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<img class='r-img' title='' onerror='this.style.display="none"' data-featherlight='C:\Users\vmmch\source\repos\NatwestCushon_Automation_Test\NatwestCushon_Automation_Test\bin\Debug\net9.0\..\..\..\TestResults\Screenshots\the user should see 'Please enter a valid password.'_20250223_124618.png' src='C:\Users\vmmch\source\repos\NatwestCushon_Automation_Test\NatwestCushon_Automation_Test\bin\Debug\net9.0\..\..\..\TestResults\Screenshots\the user should see 'Please enter a valid password.'_20250223_124618.png' data-src='C:\Users\vmmch\source\repos\NatwestCushon_Automation_Test\NatwestCushon_Automation_Test\bin\Debug\net9.0\..\..\..\TestResults\Screenshots\the user should see 'Please enter a valid password.'_20250223_124618.png'><img class='r-img' title='' onerror='this.style.display="none"' data-featherlight='C:\Users\vmmch\source\repos\NatwestCushon_Automation_Test\NatwestCushon_Automation_Test\bin\Debug\net9.0\..\..\..\TestResults\Screenshots\User attempts to log in with different credentials_20250223_124618.png' src='C:\Users\vmmch\source\repos\NatwestCushon_Automation_Test\NatwestCushon_Automation_Test\bin\Debug\net9.0\..\..\..\TestResults\Screenshots\User attempts to log in with different credentials_20250223_124618.png' data-src='C:\Users\vmmch\source\repos\NatwestCushon_Automation_Test\NatwestCushon_Automation_Test\bin\Debug\net9.0\..\..\..\TestResults\Screenshots\User attempts to log in with different credentials_20250223_124618.png'>						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="13"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">User attempts to log in with different credentials</p> 
+								<p class="duration text-sm">0h:0m:15s+088ms</p> 
+								<span class="datetime">12:46:19 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">User attempts to log in with different credentials</h5>
+										<span class='badge badge-success'>23/02/2025 12:46:19</span>
+										<span class='badge badge-danger'>23/02/2025 12:46:34</span>
+										<span class='badge badge-default'>0h:0m:15s+088ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:46:19</td>
+				<td>
+Starting test: User attempts to log in with different credentials									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:46:20</td>
+				<td>
+Given the user is on the sweet shop home page - <i>Duration: 63875911580.35685 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:46:20</td>
+				<td>
+Then the user should be able to see the title 'Welcome to the sweet shop!' - <i>Duration: 63875911580.37968 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:46:22</td>
+				<td>
+When user clicks login button on navigation bar - <i>Duration: 63875911582.56494 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:46:24</td>
+				<td>
+When the user enters the username 'Empty' - <i>Duration: 63875911584.63058 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:46:26</td>
+				<td>
+When the user enters the password 'Empty' - <i>Duration: 63875911586.679665 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:46:30</td>
+				<td>
+When clicks the login button - <i>Duration: 63875911590.74742 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:46:34</td>
+				<td>
+Then the user should see 'Please enter a valid email address.' - <i>Duration: 63875911594.78673 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:46:34</td>
+				<td>
+Test Passed									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="14"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">User adds a sweet to basket</p> 
+								<p class="duration text-sm">0h:0m:21s+078ms</p> 
+								<span class="datetime">12:46:36 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">User adds a sweet to basket</h5>
+										<span class='badge badge-success'>23/02/2025 12:46:36</span>
+										<span class='badge badge-danger'>23/02/2025 12:46:57</span>
+										<span class='badge badge-default'>0h:0m:21s+078ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:46:36</td>
+				<td>
+Starting test: User adds a sweet to basket									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:46:37</td>
+				<td>
+Given the user is on the sweet shop home page - <i>Duration: 63875911597.44826 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:46:37</td>
+				<td>
+Then the user should be able to see the title 'Welcome to the sweet shop!' - <i>Duration: 63875911597.46701 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:46:38</td>
+				<td>
+When the user clicks the 'Add to Basket' button for a sweet 'Chocolate Cups' - <i>Duration: 63875911598.574066 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:46:39</td>
+				<td>
+Then the user should be able to see the basket 1 - <i>Duration: 63875911599.61393 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:46:52</td>
+				<td>
+When the user navigates to the 'Basket' - <i>Duration: 63875911612.09751 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:46:54</td>
+				<td>
+Then the user should be able to see the valid 'Your Basket' - <i>Duration: 63875911614.13311 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:46:55</td>
+				<td>
+Then the user should be albe to see the your basket is 1 - <i>Duration: 63875911615.17106 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:46:56</td>
+				<td>
+When the user clicks on empty basket button - <i>Duration: 63875911616.24658 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:46:57</td>
+				<td>
+Then the user should be albe to see the your basket is 0 - <i>Duration: 63875911617.28708 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:46:57</td>
+				<td>
+Test Passed									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="15"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">User sees a list of sweets in Browse Sweets section</p> 
+								<p class="duration text-sm">0h:0m:18s+435ms</p> 
+								<span class="datetime">12:46:58 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">User sees a list of sweets in Browse Sweets section</h5>
+										<span class='badge badge-success'>23/02/2025 12:46:58</span>
+										<span class='badge badge-danger'>23/02/2025 12:47:17</span>
+										<span class='badge badge-default'>0h:0m:18s+435ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:46:58</td>
+				<td>
+Starting test: User sees a list of sweets in Browse Sweets section									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:47:00</td>
+				<td>
+Given the user is on the sweet shop home page - <i>Duration: 63875911620.30395 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:47:00</td>
+				<td>
+Then the user should be able to see the title 'Welcome to the sweet shop!' - <i>Duration: 63875911620.32548 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:47:02</td>
+				<td>
+When the user navigates to the 'Browse Sweets' - <i>Duration: 63875911622.897316 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:47:17</td>
+				<td>
+Then the user should see a list of available sweets with their names as below - <i>Duration: 63875911637.13725 seconds</i>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:47:17</td>
+				<td>
+Test Passed									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+            </ul>    
+        </div>
+    </div>
+    <div class="test-content scrollable">
+        <div class="test-content-tools">
+            <ul>
+                <li>
+                    <a class="back-to-test" href="javascript:void(0)">
+                        <i class="fa fa-arrow-left"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="test-content-detail">
+            <div class="detail-body"></div>
+        </div>
+    </div>
+</div>
+										<div class="container-fluid p-4 dashboard-view">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Tests</h6>
+				</div>
+				<div class="card-body">
+	                <div class="">
+	                    <canvas id='parent-analysis' width='115' height='90'></canvas>
+	                </div>
+	            </div>
+	            <div class="card-footer">
+	                <div><small data-tooltip='66.66666666666666%'>
+	                    <b>10</b> tests passed
+                    </small></div>
+	                <div>
+	                    <small data-tooltip='33.33333333333333%'><b>5</b> tests failed, 
+	                    <b data-tooltip='0%'>0</b> others
+	                    </small>
+                    </div>
+	            </div>
+			</div>
+		</div>
+			</div>
+	<div class="row">
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+	                <div class="media justify-content-between">
+						<div>
+							<h6 class="card-title">Tests</h6>
+							<h2 class="font-size-28 font-weight-light">15</h2>
+							<span class="text-semibold text-success font-size-15">
+							<i class="ti-arrow-up font-size-11"></i> 
+								<span>66.67%</span>
+							</span>
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-align-left font-size-70 opacity-01"></i>
+						</div>
+					</div>
+	            </div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+	                <div class="media justify-content-between">
+						<div>
+							<h6 class="card-title">Start</h6>
+							<h6 class="font-weight-light">23/02/2025 12:43:10</h6>
+							<span class="text-semibold text-success font-size-15">
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-clock-o font-size-70 text-success opacity-01"></i>
+						</div>
+					</div>
+	            </div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+	                <div class="media justify-content-between">
+						<div>
+							<h6 class="card-title">Duration</h6>
+							<h6 class="font-weight-light">00:04:06.5686073</h6>
+							<span class="text-semibold text-danger font-size-15">
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-clock-o font-size-70 text-danger opacity-01"></i>
+						</div>
+					</div>
+	            </div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+	                <div class="media justify-content-between">
+						<div>
+							<p class="">Duration</p>
+							<h6 class="font-weight-light">00:04:09.1615066</h6>
+							<span class="text-semibold font-size-15">
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-clock-o font-size-70 text-danger opacity-01"></i>
+						</div>
+					</div>
+	            </div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+								<div class="col-md-4">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Environment</h6>
+				</div>
+				<div class="table-overflow">
+					<table class="table table-sm">
+						<thead>
+							<tr class="bg-gray">
+								<th>Name</th>
+								<th>Value</th>
+							</tr>
+						</thead>
+						<tbody>
+								<tr>
+									<td>Application</td>
+									<td>Natwest Cushon</td>
+								</tr>
+								<tr>
+									<td>Browser</td>
+									<td>Chrome</td>
+								</tr>
+								<tr>
+									<td>OS</td>
+									<td>Windows</td>
+								</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	var statusGroup = {
+    parentCount: 15,
+		passParent: 10,
+		failParent: 5,
+		fatalParent: 0,
+		errorParent: 0,
+		warningParent: 0,
+		skipParent: 0,
+		exceptionsParent: 5,
+		childCount: 0,
+		passChild: 0,
+		failChild: 0,
+		fatalChild: 0,
+		errorChild: 0,
+		warningChild: 0,
+		skipChild: 0,
+		infoChild: 0,
+		debugChild: 0,
+		exceptionsChild: 0,
+		grandChildCount: 0,
+		passGrandChild: 0,
+		failGrandChild: 0,
+		fatalGrandChild: 0,
+		errorGrandChild: 0,
+		warningGrandChild: 0,
+		skipGrandChild: 0,
+		infoGrandChild: 0,
+		debugGrandChild: 0,
+		exceptionsGrandChild: 0,
+	};
+</script>
+
+                </div>
+            </div>
+        </div>
+    </div>
+	<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@cc89904c1a12065be1d08fc4994a258ef01b12bd/spark/js/scripts.js"></script>
+<script type='text/javascript'>
+	
+</script>
+</body>
+
+</html>
