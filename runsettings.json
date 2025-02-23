@@ -1,0 +1,30 @@
+{
+  "RunConfiguration": {
+    "TargetFramework": "net9.0",
+    "ResultsDirectory": "TestResults",
+    "TestAdaptersPaths": [
+      "path_to_test_adapters"
+    ]
+  },
+  "TestReports": {
+    "ReqNRoll": {
+      "OutputDirectory": "Reports",
+      "ReportName": "TestReport.html",
+      "IncludeScreenshots": true
+    }
+  },
+  "TestSettings": {
+    "BaseUrl": "https://sweetshop.netlify.app/",
+    "LoginUrl": "/login",
+    "Username": "you@example.com",
+    "Password": "Password",
+    "Invalid UserName": "my@example.com",
+    "Invalid Password": "abcd"
+  },
+  "ApiTestSettings": {
+    "Client": "https://airportgap.com/api",
+    "ApiEmail": "test@airportgap.com",
+    "ApiPassword": "airportgappassword",
+    "TokenApi": "/tokens"
+  }
+}
